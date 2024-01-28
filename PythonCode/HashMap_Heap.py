@@ -1,3 +1,7 @@
+# from graphviz import Digraph
+
+# filepath = "D:\ProfNath_PSA_SM\graph\Test\\"
+
 print("\nImplementation of HashTable")
 def get_hash(key):
     hash = 0
@@ -63,9 +67,9 @@ print("Value of the key is ", t["Adam"])
 
 # Delete form the hashTable
 del t["Tom"]
-
 print("\nArray format of the hashtable", t.arr)
 
+print("\n=======================================")
 #Note :- dictonary is python specific implements hash table
 
 print("\nExample for hash Table in python")
@@ -103,9 +107,8 @@ del my_dict
 # print("Trying to access the deleted dictionary:", my_dict)
 
 
-print("\nHeap Example")
-
-print("=======================================")
+print("\n=======================================")
+print("Heap Example")
 print("#-Heap Opreations-#")
 
 class MinHeap:
@@ -180,13 +183,27 @@ heapObj.insertKey(15)
 heapObj.insertKey(5)
 heapObj.insertKey(4)
 heapObj.insertKey(45)
+print("Heap after inserting all elements")
+heapObj.display()
+# heapObj.visualize(0)
 
-print(heapObj.extractMin()) # Extracts and prints 2
-print(heapObj.getMin()) # Gets the minimum element, prints 3
+print("\nExtracting Min", heapObj.extractMin()) # Extracts and prints 2
+print("Heap after extracting min", heapObj.display())
+heapObj.display()
+
+print("\nGetting Min", heapObj.getMin()) # Gets the minimum element, prints 3
+print("Heap after geting min")
+heapObj.display()
 # heapObj.visualize(1)
 
-print(heapObj.extractMin())# Extracts and prints 3
-print(heapObj.getMin())# Gets the minimum element, prints 4
+
+print("\nExtracting Min", heapObj.extractMin())# Extracts and prints 3
+print("Heap after extracting next min")
+heapObj.display()
+
+print("\nGetting Min", heapObj.getMin())# Gets the minimum element, prints 4
+print("Heap after geting next min")
+heapObj.display()
 # heapObj.visualize(2)
 
 # This code defines a `MinHeap` class with methods for CRUD operations:
